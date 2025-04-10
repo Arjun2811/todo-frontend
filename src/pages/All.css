@@ -1,0 +1,123 @@
+/* === Page Background === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* === Login Container === */
+  .container {
+    background: #fff;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeInSlideUp 0.5s ease-in-out;
+  }
+  
+  /* Add margin from mt-5 */
+  .mt-5 {
+    margin-top: 3rem;
+  }
+  
+  /* === Heading === */
+  .container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  /* === Input Fields === */
+  .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+    outline: none;
+  }
+  
+  /* Margin bottom */
+  .mb-2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* === Login Button === */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-success {
+    background-color: #667eea;
+    color: white;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #556cd6;
+  }
+  
+  /* === Signup Prompt === */
+  .Loginscreen_gray {
+    color: #888;
+  }
+  
+  .Signupscreen_link {
+    color: #667eea;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .Signupscreen_link:hover {
+    color: #4457c2;
+    text-decoration: underline;
+  }
+  
+  /* === Animation === */
+  @keyframes fadeInSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* === Mobile Responsive === */
+  @media (max-width: 500px) {
+    .container {
+      padding: 2rem 1.5rem;
+      border-radius: 0.8rem;
+    }
+  
+    .container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .btn {
+      font-size: 0.95rem;
+    }
+  }
+  
