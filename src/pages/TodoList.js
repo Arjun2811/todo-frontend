@@ -13,7 +13,7 @@ function TodoList() {
     }
 
     try {
-      const res = await axios.get('http://localhost:5050/api/tasks', {
+      const res = await axios.get('https://todo-backend-c53w.onrender.com/api/tasks', {
         params: { userId },
       });
       setTasks(res.data);
@@ -32,7 +32,7 @@ function TodoList() {
     console.log("Sending to backend:", { task: taskText, userId });
 
     try {
-      await axios.post('http://localhost:5050/api/tasks', {
+      await axios.post('https://todo-backend-c53w.onrender.com/api/tasks', {
         task: taskText,
         userId,
       });
@@ -47,7 +47,7 @@ function TodoList() {
 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:5050/api/tasks/${id}`);
+      await axios.delete(`https://todo-backend-c53w.onrender.com/api/tasks/${id}`);
       fetchTasks();
     } catch (error) {
       console.error('Error deleting task:', error.response?.data || error);
