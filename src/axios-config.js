@@ -2,8 +2,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5050'
+  baseURL: 'https://todo-backend-c53w.onrender.com/api' 
 });
+
 
 export default api;
 
