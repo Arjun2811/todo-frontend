@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://todo-backend-c53w.onrender.com/api' 
+  baseURL: 'https://todo-backend-c53w.onrender.com' 
 });
 
 
